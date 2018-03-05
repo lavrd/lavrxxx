@@ -1,0 +1,35 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+  --primary-color: #02020A;
+  --second-color: #E1E2EF;
+  --ex-color-1: #05204A;
+  --ex-color-2: #B497D6;
+  --ex-color-3: #BFACAA;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--second-color)
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--ex-color-2)
+}
