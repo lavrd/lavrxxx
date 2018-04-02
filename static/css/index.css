@@ -1,28 +1,35 @@
 @import "normalize.css";
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
 
 :root {
-  --primary-color: #02020A;
-  --second-color: #E1E2EF;
-  --ex-color-1: #05204A;
-  --ex-color-2: #B497D6;
-  --ex-color-3: #BFACAA;
+  --primary-color: #02020a;
+  --second-color: #e1e2ef;
+  --ex-color: #b497d6;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+
   background-color: var(--primary-color);
-  color: var(--second-color)
+  color: var(--second-color);
+}
+
+.main h1 {
+  letter-spacing: 0.5rem;
 }
 
 .main {
   display: flex;
   justify-content: center;
-  -webkit-justify-content: center;
   flex-direction: column;
   height: 100vh;
-  -webkit-align-items: center;
   align-items: center;
+
+  animation-delay: 200ms;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+  animation-fill-mode: both;
+  animation-name: bounce;
 }
 
 a {
@@ -31,5 +38,5 @@ a {
 }
 
 a:hover {
-  color: var(--ex-color-2)
+  color: var(--ex-color);
 }
