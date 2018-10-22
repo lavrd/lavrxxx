@@ -3,20 +3,22 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 
 :root {
-  --primary-color: #02020a;
-  --second-color: #e1e2ef;
-  --ex-color: #b497d6;
+  --primary-color: #000000;
+  --second-color: #FFFFFF;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-
   background-color: var(--primary-color);
   color: var(--second-color);
 }
 
-.main h1 {
-  letter-spacing: 0.5rem;
+a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 5em;
 }
 
 .main {
@@ -25,19 +27,9 @@ body {
   flex-direction: column;
   height: 100vh;
   align-items: center;
-
   animation-delay: 200ms;
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
   animation-fill-mode: both;
   animation-name: bounce;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: var(--ex-color);
 }
