@@ -1,1 +1,1 @@
-window.onload = () => console.log("xthelavr");
+window.onload = () => console.log("lluuvr");
